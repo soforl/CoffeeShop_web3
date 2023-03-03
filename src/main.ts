@@ -16,5 +16,8 @@ async function bootstrap() {
   app.setBaseViewsDir(join(__dirname, '..', 'views'));
   app.setViewEngine('hbs');
 
+  const hbs = require('hbs')
+  hbs.registerPartials(join(__dirname, '..', 'views/partials'));
+
 }
 bootstrap();
