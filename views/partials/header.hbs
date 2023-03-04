@@ -7,11 +7,10 @@
     <a href="/" class="nav__home">HOME</a>
     <a href="/menu" class="nav__menu">MENU</a>
     <a href="/about-us" class="nav__about">ABOUT US</a>
-    {{data.userName}}
     {{# if isAuthorized }}
-    <a href="/account" class="nav__about">ME</a>
+    <a href="/" class="nav__home">ME</a>
     {{ else }}
-    <a href="/login" class="nav__about">LOGIN</a>
+    <a href="/" class="nav__home">LOGIN</a>
     {{/if}}
 
 
