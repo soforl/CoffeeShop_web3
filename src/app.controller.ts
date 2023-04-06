@@ -4,7 +4,7 @@ import { Render } from '@nestjs/common';
 import { isAuthorized } from './utils';
 import { Interceptor } from './Interceptor';
 
-@Controller()
+@Controller('api')
 @UseInterceptors(Interceptor)
 export class AppController {
   constructor(private readonly appService: AppService) {}
